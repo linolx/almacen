@@ -1,0 +1,234 @@
+.inventario {
+    padding: 20px 0;
+}
+
+.inventario__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    gap: 24px;
+}
+
+.inventario__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+    flex: 1;
+}
+
+.inventario__search {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.inventario__input {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 300px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inventario__input:focus {
+    outline: none;
+    border-color: #1e293b;
+    box-shadow: 0 0 0 3px rgba(30, 41, 59, 0.1);
+}
+
+.inventario__table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.inventario__table th {
+    background-color: #f8fafc;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.inventario__table td {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 14px 16px;
+    color: #334155;
+    font-size: 14px;
+}
+
+.inventario__table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.inventario__table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.inventario__table th:nth-child(5),
+.inventario__table th:nth-child(6),
+.inventario__table th:nth-child(7),
+.inventario__table td:nth-child(5),
+.inventario__table td:nth-child(6),
+.inventario__table td:nth-child(7) {
+    text-align: right;
+    padding-right: 16px;
+}
+
+.inventario__stock--align {
+    text-align: right;
+    padding-right: 16px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.inventario__precio {
+    text-align: right;
+    padding-right: 16px;
+    color: #64748b;
+}
+
+.inventario__subtotal {
+    text-align: right;
+    padding-right: 16px;
+    font-weight: 700;
+    color: #15803d;
+}
+
+.inventario__form {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.inventario__field {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inventario__field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.inventario__field input,
+.inventario__field select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inventario__field input:focus,
+.inventario__field select:focus {
+    outline: none;
+    border-color: #1e293b;
+    box-shadow: 0 0 0 3px rgba(30, 41, 59, 0.1);
+}
+
+.inventario__button {
+    padding: 12px 24px;
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.inventario__button:hover {
+    background-color: #0f172a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.15);
+}
+
+.inventario__button:active {
+    transform: translateY(0);
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination__button {
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pagination__button:hover {
+    border-color: #1e293b;
+    background-color: #f8fafc;
+}
+
+.pagination__button--active {
+    background-color: #1e293b;
+    color: white;
+    border-color: #1e293b;
+}
+
+.stock-valorizado {
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.stock-valorizado__card {
+    background: white;
+    color: #334155;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+}
+
+.stock-valorizado__title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 12px 0;
+    color: #64748b;
+}
+
+.stock-valorizado__value {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #1e293b;
+}
+
+.stock-valorizado__subtitle {
+    font-size: 13px;
+    margin: 0;
+    color: #94a3b8;
+}

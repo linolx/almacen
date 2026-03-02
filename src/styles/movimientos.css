@@ -1,0 +1,227 @@
+.movimientos {
+    padding: 20px 0;
+}
+
+.movimientos__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 24px 0;
+}
+
+.movimientos__form {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    max-width: 450px;
+    margin-bottom: 24px;
+}
+
+.movimientos__field {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movimientos__field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.movimientos__field input,
+.movimientos__field select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movimientos__field input:focus,
+.movimientos__field select:focus {
+    outline: none;
+    border-color: #1e293b;
+    box-shadow: 0 0 0 3px rgba(30, 41, 59, 0.1);
+}
+
+.movimientos__button {
+    padding: 12px 24px;
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.movimientos__button:hover {
+    background-color: #0f172a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.15);
+}
+
+.movimientos__button:active {
+    transform: translateY(0);
+}
+
+.movimientos__table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.movimientos__table th {
+    background-color: #f8fafc;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.movimientos__table td {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 14px 16px;
+    color: #334155;
+    font-size: 14px;
+}
+
+.movimientos__table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.movimientos__table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.movimientos__tipo--entrada {
+    color: #15803d;
+    font-weight: 700;
+    background-color: #dcfce7;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.movimientos__tipo--salida {
+    color: #991b1b;
+    font-weight: 700;
+    background-color: #fee2e2;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.movimiento-confirmacion {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+}
+
+.movimiento-confirmacion__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+}
+
+.movimiento-confirmacion__card {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.24);
+    overflow: hidden;
+}
+
+.movimiento-confirmacion__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.movimiento-confirmacion__info {
+    min-width: 0;
+}
+
+.movimiento-confirmacion__titulo {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.movimiento-confirmacion__material {
+    margin: 6px 0 0;
+    color: #475569;
+    font-size: 14px;
+}
+
+.movimiento-confirmacion__tipo {
+    align-self: start;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.movimiento-confirmacion__tipo--entrada {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.movimiento-confirmacion__tipo--salida {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+.movimiento-confirmacion__body {
+    padding: 18px 20px 10px;
+}
+
+.movimiento-confirmacion__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.movimiento-confirmacion__row:last-child {
+    border-bottom: none;
+}
+
+.movimiento-confirmacion__label {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.movimiento-confirmacion__value {
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+}
+
+.movimiento-confirmacion__footer {
+    padding: 20px;
+    border-top: 1px solid #e2e8f0;
+}

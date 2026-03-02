@@ -1,0 +1,132 @@
+.dashboard {
+    padding: 20px 0;
+}
+
+.dashboard__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.dashboard__section {
+    margin-bottom: 30px;
+}
+
+.dashboard__section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #334155;
+    margin: 0 0 16px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.dashboard__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.dashboard__grid--two-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dashboard__card {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.dashboard__card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.dashboard__card-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.dashboard__card-value {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.dashboard__card--warning {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-color: #fcd34d;
+}
+
+.dashboard__card--warning .dashboard__card-label {
+    color: #92400e;
+}
+
+.dashboard__card--warning .dashboard__card-value {
+    color: #78350f;
+}
+
+.dashboard__card--entrada {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    border-color: #86efac;
+}
+
+.dashboard__card--entrada .dashboard__card-label {
+    color: #166534;
+}
+
+.dashboard__card--entrada .dashboard__card-value {
+    color: #15803d;
+}
+
+.dashboard__card--salida {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    border-color: #fca5a5;
+}
+
+.dashboard__card--salida .dashboard__card-label {
+    color: #7f1d1d;
+}
+
+.dashboard__card--salida .dashboard__card-value {
+    color: #991b1b;
+}
+
+.dashboard__card--special {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border-color: #7dd3fc;
+}
+
+.dashboard__card--special .dashboard__card-label {
+    color: #0c4a6e;
+}
+
+.dashboard__card--special .dashboard__card-value {
+    color: #0369a1;
+}
+
+@media (max-width: 768px) {
+    .dashboard__grid--two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard__card {
+        padding: 20px;
+    }
+
+    .dashboard__card-value {
+        font-size: 28px;
+    }
+}

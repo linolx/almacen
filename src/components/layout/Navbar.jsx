@@ -18,7 +18,7 @@ const Navbar = () => {
 
                 <div className="navbar__user">
                     <span className="navbar__username">
-                        👤 <strong>admin</strong>
+                        👤 <strong>Bienvenido: Lino Alfonso Alvarez Huamani</strong>
                     </span>
                     <button
                         className="navbar__logout"
